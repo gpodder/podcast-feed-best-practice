@@ -42,10 +42,10 @@ Feed Format
   UTF-8](http://www.apple.com/itunes/podcasts/specs.html#encoding)
 
 
-Feed
-----
+Podcast
+-------
 
-One feed should describe one show, and its episodes.
+One feed should describe one podcast and its episodes.
 
 
 ### Contents
@@ -93,8 +93,8 @@ Apple](http://www.apple.com/itunes/podcasts/specs.html#formattingvideo).
 
 
 
-Feed Meta Data
---------------
+Podcast Meta Data
+-----------------
 
 * TODO: Related feeds?
 * TODO: Self-reference? Canonical URL?
