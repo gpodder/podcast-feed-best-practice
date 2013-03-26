@@ -1,7 +1,7 @@
 gPodder Podcast Feed Best Practice
 ==================================
 
-*** Document Status: very early draft ***
+* Document Status: very early draft *
 
 This document contains best practices for creating podcast feeds that should be
 consumed by podcasting clients. It aims to be a guideline for podcast
