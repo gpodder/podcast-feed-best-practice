@@ -88,6 +88,9 @@ Media Files
 * TODO: Which audio/video formats are recommended? Is there a
   comprehensive/authoritative list of open source codecs?
 
+For iTunes support refer to the [audio and video formats recommended by
+Apple](http://www.apple.com/itunes/podcasts/specs.html#formattingvideo).
+
 
 
 Feed Meta Data
