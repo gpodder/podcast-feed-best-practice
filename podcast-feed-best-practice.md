@@ -36,7 +36,7 @@ interpreted as described in [RFC 2119][RFC2119].
 Feed Format
 -----------
 
-RSS? Atom?
+* TODO: RSS? Atom?
 
 
 Feed Contents
@@ -57,14 +57,18 @@ One feed should describe one show, and its episodes.
 Media Files
 -----------
 
-Formats? How to handle multiple formats
+* TODO: How to handle multiple formats?
+* TODO: Which audio/video formats are recommended? Is there a comprehensive/authoritative list of open source codecs?
+
 
 
 Feed Meta Data
 --------------
 
-Author information? Related feeds? Self-reference? Canonical URL?
-How to match uniquely identify an author among multiple feeds? Email?
+* TODO: Author information? 
+* TODO Related feeds? 
+* TODO Self-reference? Canonical URL?
+* TODO: How to match uniquely identify an author among multiple feeds? Email?
 
 
 Episode
@@ -72,8 +76,8 @@ Episode
 
 An episode describes one recording (?) of a podcast's show.
 
-TODO: number and order of episodes, alternative feeds with other selection of
-episodes
+* TODO: number and order of episodes?
+* TODO: alternative feeds with other selection of episodes
 
 
 ### Contents
@@ -108,7 +112,8 @@ be used to indicate that the feed has moved to a different URL. Clients are
 then instructed to updated the URL stored for the feed, and access the redirect
 target directly in the future.
 
-TODO: how about RSS Redirects: http://cyber.law.harvard.edu/rss/rssRedirect.html ?
+* TODO: how about RSS Redirects: http://cyber.law.harvard.edu/rss/rssRedirect.html ?
+* TODO: how about <itunes:new-feed-url> ? 
 
 
 
