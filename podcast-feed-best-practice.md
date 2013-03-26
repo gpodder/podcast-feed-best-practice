@@ -53,6 +53,31 @@ One feed should describe one show, and its episodes.
 * Payment URL
 
 
+### Title
+
+TODO
+
+
+### Link
+
+TODO
+
+
+### Description
+
+The description can be formatted using [Markdown][markdown].
+
+
+### Image / Cover
+
+* TODO: Image requirements?
+
+
+### Payment URL
+
+TODO
+
+
 Media Files
 -----------
 
@@ -183,6 +208,8 @@ References
 [RFC2119]: http://www.ietf.org/rfc/rfc2119.txt "RFC 2119 Key words for use in RFCs to Indicate Requirement Levels"
 [gpodder]: https://github.com/gpodder/ "gPodder projects"
 [rfc2822datetime]: http://tools.ietf.org/html/rfc2822#section-3.3 "RFC 2822 Date and Time Specification"
+[markdown]: http://daringfireball.net/projects/markdown/ "Markdown"
+
 
 Authors
 -------
