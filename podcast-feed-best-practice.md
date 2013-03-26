@@ -37,6 +37,9 @@ Feed Format
 -----------
 
 * TODO: RSS? Atom?
+* TODO: Encoding? Always UTF-8? Defined in HTTP headers or in
+* the content? iTunes [requires
+  UTF-8](http://www.apple.com/itunes/podcasts/specs.html#encoding)
 
 
 Feed
