@@ -170,9 +170,8 @@ be used to indicate that the feed has moved to a different URL. Clients are
 then instructed to updated the URL stored for the feed, and access the redirect
 target directly in the future.
 
-* TODO: how about RSS Redirects:
-  http://cyber.law.harvard.edu/rss/rssRedirect.html ?
-* TODO: how about `<itunes:new-feed-url>` ?
+* TODO: how about [RSS Redirects](http://cyber.law.harvard.edu/rss/rssRedirect.html)?
+* TODO: how about [`<itunes:new-feed-url>`](http://www.apple.com/itunes/podcasts/specs.html#newfeed) ?
 
 * TODO: support ETag, other Cache-related HTTP headers
 
