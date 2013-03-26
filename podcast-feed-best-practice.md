@@ -15,10 +15,11 @@ compatability among podcast applications.
 Preface
 -------
 
-RSS and Atom feeds are commonly used to distribute and describe podcasts. Due
-to their generic definition, they can be ambigously interpreted for the use
-case of podcasts. This often resulted in incompatible uses of these standards
-which then caused problems when processing some podcast feeds.
+[RSS][rss20] and [Atom][rfc4287] feeds are commonly used to distribute and
+describe podcasts. Due to their generic definition, they can be ambigously
+interpreted for the use case of podcasts. This often resulted in incompatible
+uses of these standards which then caused problems when processing some podcast
+feeds.
 
 This document builds upon existing standards and established extensions, and
 gives recommendations how these standards should be put to use. It should not
@@ -36,7 +37,7 @@ interpreted as described in [RFC 2119][RFC2119].
 Feed Format
 -----------
 
-* TODO: RSS? Atom?
+* TODO: [RSS][rss20]? [Atom][rfc4287]?
 * TODO: Encoding? Always UTF-8? Defined in HTTP headers or in
   the content? iTunes [requires
   UTF-8](http://www.apple.com/itunes/podcasts/specs.html#encoding)
@@ -105,7 +106,7 @@ Podcast Meta Data
 
 Podcast feeds SHOULD include information about the author.
 
-Specify [author](http://tools.ietf.org/html/rfc4287#section-4.2.1). It is
+Specify [author][rfc4287author]. It is
 recommended to include [name, URI and email
 address](http://tools.ietf.org/html/rfc4287#section-3.2) of the author.
 
@@ -215,6 +216,9 @@ References
 [gpodder]: https://github.com/gpodder/ "gPodder projects"
 [rfc2822datetime]: http://tools.ietf.org/html/rfc2822#section-3.3 "RFC 2822 Date and Time Specification"
 [markdown]: http://daringfireball.net/projects/markdown/ "Markdown"
+[rss20]: http://cyber.law.harvard.edu/rss/rss.html "RSS 2.0 at Harvard Law"
+[rfc4287]: http://tools.ietf.org/html/rfc4287 "The Atom Syndication Format"
+[rfc4287author]: (http://tools.ietf.org/html/rfc4287#section-4.2.1 (The "atom:author" Element)
 
 
 Authors
