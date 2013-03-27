@@ -165,6 +165,8 @@ Each episode describes one recording of a podcast's show.
 * Duration
 * Publication Date
 * Payment URL
+* Comments
+
 
 
 ### GUID
@@ -204,6 +206,11 @@ Specification][rfc2822datetime].
 ### Payment URL
 
 * TODO, see http://developers.flattr.net/feed/
+
+
+### Comments
+
+* TODO: http://bitworking.org/news/2012/08/wfw.html
 
 
 Enclosure
