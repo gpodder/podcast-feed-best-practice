@@ -83,6 +83,11 @@ TODO
 The description can be formatted using [Markdown][markdown].
 
 
+### Update Frequency
+
+* TODO: http://web.resource.org/rss/1.0/modules/syndication/
+
+
 ### Image / Cover
 
 * TODO: Image requirements?
