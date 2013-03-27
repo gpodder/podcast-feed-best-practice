@@ -56,8 +56,16 @@ different number and or selection of episodes, etc). See section
 * Title
 * Link
 * Description
-* Image / Cover
+* lastBuildDate
+* Language
+* Update Frequency
+* Generator
 * Payment URL
+* Summary
+* Author
+* Image / Cover
+* Copyright and License
+* Categorization
 
 
 ### Title
