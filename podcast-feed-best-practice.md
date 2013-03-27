@@ -91,6 +91,13 @@ The description can be formatted using [Markdown][markdown].
 ### Image / Cover
 
 * TODO: Image requirements?
+* itunes:image
+
+    <image>
+     <title>Title of the Image</title>
+     <url>http://example.com/image.png</url>
+     <link>http://example.com/podcast</link>
+    </image>
 
 
 ### Payment URL
