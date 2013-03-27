@@ -46,7 +46,10 @@ Feed Format
 Podcast
 -------
 
-One feed should describe one podcast and its episodes.
+One feed describes one podcast and its episodes. There MAY be multiple feeds
+describing different views of the same podcast (eg different media types,
+different number and or selection of episodes, etc). See section
+*Related Feeds*.
 
 
 ### Contents
@@ -192,6 +195,12 @@ Enclosure
 * File Size
 * Length
 
+
+Related Feeds
+-------------
+
+* TODO: Reference all related feeds from every other feed, or reference one
+  common resource that refers to all feeds; if so, which format?
 
 
 Availability
