@@ -88,7 +88,21 @@ The URL of the podcast's website.
 
 ### Description
 
-The description can be formatted using [Markdown][markdown].
+A podcast MUST contain a textual description. The description MAY be formatted
+using [Markdown][markdown].
+
+In RSS the description is contained in `rss/channel/description`.
+
+TODO: Atom
+
+It is RECOMMENDED to provide a shorter and a longer version of the description
+using the [iTunes extensions][itunes]. The
+[`<itunes:subtitle>`](http://www.apple.com/itunes/podcasts/specs.html#subtitle)
+element SHOULD contain a description of only a few words length. The
+[`<itunes:summary>`](http://www.apple.com/itunes/podcasts/specs.html#summary)
+element SHALL contain a longer description. When using the `subtitle` and
+`summary` elements it is RECOMMENDED to provide the contents of the `summary`
+tag also in the `description` tag.
 
 
 ### Update Frequency
