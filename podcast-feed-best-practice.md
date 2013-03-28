@@ -295,6 +295,8 @@ References
 [rss20]: http://cyber.law.harvard.edu/rss/rss.html "RSS 2.0 at Harvard Law"
 [rfc4287]: http://tools.ietf.org/html/rfc4287 "The Atom Syndication Format"
 [rfc4287author]: (http://tools.ietf.org/html/rfc4287#section-4.2.1 (The "atom:author" Element)
+[itunes]: http://www.apple.com/itunes/podcasts/specs.html#subtitle "iTunes Extensions"
+[synmod]: http://web.resource.org/rss/1.0/modules/syndication/ "RDF Site Summary 1.0 Modules: Syndication"
 
 
 Authors
