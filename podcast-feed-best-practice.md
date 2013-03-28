@@ -118,8 +118,9 @@ element from the iTunes extensions.
 
 ### Image / Cover
 
-* TODO: Image requirements?
-* itunes:image
+It is RECOMMENDED to provide an image or cover art for a podcast.
+
+**RSSS**
 
 ```xml
 <image>
@@ -128,6 +129,11 @@ element from the iTunes extensions.
  <link>http://example.com/podcast</link>
 </image>
 ```
+
+**Open Questions**
+* Image requirements?
+* itunes:image
+
 
 ### Payment URL
 
