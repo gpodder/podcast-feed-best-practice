@@ -162,18 +162,6 @@ It is RECOMMENDED to provide an image or cover art for a podcast.
 TODO
 
 
-Media Files
------------
-
-* TODO: How to handle multiple formats?
-* TODO: Which audio/video formats are recommended? Is there a
-  comprehensive/authoritative list of open source codecs?
-
-For iTunes support refer to the [audio and video formats recommended by
-Apple](http://www.apple.com/itunes/podcasts/specs.html#formattingvideo).
-
-
-
 
 ### Author
 
@@ -312,6 +300,17 @@ Media Files
 * Media Type
 * File Size
 * Length
+
+
+**Open Questions**
+* TODO: How to handle multiple formats?
+* TODO: Which audio/video formats are recommended? Is there a
+  comprehensive/authoritative list of open source codecs?
+
+For iTunes support refer to the [audio and video formats recommended by
+Apple](http://www.apple.com/itunes/podcasts/specs.html#formattingvideo).
+
+
 
 
 
