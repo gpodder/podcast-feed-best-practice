@@ -107,7 +107,13 @@ tag also in the `description` tag.
 
 ### Update Frequency
 
-* TODO: http://web.resource.org/rss/1.0/modules/syndication/
+It is RECOMMENDED to providate information about the podcast's update
+frequency using the [RDF Site Summary Syndication Module][synmod].
+
+If a podcast is not longer updated with new episodes, it is RECOMMENDED to
+indicate this by using the
+[`<itunes:complete>`](http://www.apple.com/itunes/podcasts/specs.html#complete)
+element from the iTunes extensions.
 
 
 ### Image / Cover
