@@ -83,7 +83,7 @@ A feed MUST contain a title.
 
 ### Link
 
-TODO
+The URL of the podcast's website.
 
 
 ### Description
