@@ -34,17 +34,39 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
 interpreted as described in [RFC 2119][RFC2119].
 
 
-Feed Format
------------
+Overview
+--------
 
-* TODO: [RSS][rss20]? [Atom][rfc4287]?
-* TODO: Encoding? Always UTF-8? Defined in HTTP headers or in
-  the content? iTunes [requires
-  UTF-8](http://www.apple.com/itunes/podcasts/specs.html#encoding)
+### Terminology
+
+A _podcast_ is a type of digital media consisting of an episodic series of
+media files which are distributed through web syndication. A podcast is
+described by one or more _podcast feeds_ (short _feeds_). A podcast contains
+any number of _episodes_, each of which is represented by zero or more _media
+files_.
 
 
-Podcast
--------
+### Structure
+
+The remaineder of this document is divided into the following sections:
+
+* **General Considerations** discusses general topics related to the
+  distribution of podcasts
+* **Podcasts** discusses pieces of information that describe a podcast
+* **Feeds** discusses more technical details of the feeds describing a podcast
+* **Episodes** discusses pieces of information that describe an episode
+* **Media Files** discusses more technical details of the mediate files that
+  contain the actual content of an episode
+
+
+General Considerations
+----------------------
+
+TODO
+
+
+Podcasts
+--------
 
 One feed describes one podcast and its episodes. There MAY be multiple feeds
 describing different views of the same podcast (eg different media types,
@@ -152,13 +174,6 @@ Apple](http://www.apple.com/itunes/podcasts/specs.html#formattingvideo).
 
 
 
-Podcast Meta Data
------------------
-
-* TODO: Related feeds?
-* TODO: Self-reference? Canonical URL?
-* TODO: How to match uniquely identify an author among multiple feeds? Email?
-
 
 ### Author
 
@@ -176,6 +191,47 @@ for iTunes support.
 
 * TODO: RSS?
 
+
+Feeds
+-----
+
+### Meta Data
+
+* TODO: Related feeds?
+* TODO: Self-reference? Canonical URL?
+* TODO: How to match uniquely identify an author among multiple feeds? Email?
+
+
+### Format
+
+* TODO: [RSS][rss20]? [Atom][rfc4287]?
+* TODO: Encoding? Always UTF-8? Defined in HTTP headers or in
+  the content? iTunes [requires
+  UTF-8](http://www.apple.com/itunes/podcasts/specs.html#encoding)
+
+
+### Related Feeds
+
+* TODO: Reference all related feeds from every other feed, or reference one
+  common resource that refers to all feeds; if so, which format?
+
+
+### Availability
+
+Each feed should have exactly one cannonical URL. A permanent redirect should
+be used to indicate that the feed has moved to a different URL. Clients are
+then instructed to updated the URL stored for the feed, and access the redirect
+target directly in the future.
+
+* TODO: how about [RSS Redirects](http://cyber.law.harvard.edu/rss/rssRedirect.html)?
+* TODO: how about [`<itunes:new-feed-url>`](http://www.apple.com/itunes/podcasts/specs.html#newfeed) ?
+
+* TODO: support ETag, other Cache-related HTTP headers
+
+
+### Pub Sub Hub
+
+* TODO
 
 
 Episode
@@ -248,40 +304,14 @@ Specification][rfc2822datetime].
 * TODO: http://bitworking.org/news/2012/08/wfw.html
 
 
-Enclosure
----------
+Media Files
+-----------
 
 ### Contents
 * Link
 * Media Type
 * File Size
 * Length
-
-
-Related Feeds
--------------
-
-* TODO: Reference all related feeds from every other feed, or reference one
-  common resource that refers to all feeds; if so, which format?
-
-
-Availability
-------------
-
-Each feed should have exactly one cannonical URL. A permanent redirect should
-be used to indicate that the feed has moved to a different URL. Clients are
-then instructed to updated the URL stored for the feed, and access the redirect
-target directly in the future.
-
-* TODO: how about [RSS Redirects](http://cyber.law.harvard.edu/rss/rssRedirect.html)?
-* TODO: how about [`<itunes:new-feed-url>`](http://www.apple.com/itunes/podcasts/specs.html#newfeed) ?
-
-* TODO: support ETag, other Cache-related HTTP headers
-
-
-### Pub Sub Hub
-
-* TODO
 
 
 
