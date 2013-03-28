@@ -70,7 +70,15 @@ different number and or selection of episodes, etc). See section
 
 ### Title
 
-TODO
+The name of the podcast.
+
+In RSS the title is contained in `rss/channel/title`.
+
+A feed MUST contain a title.
+
+**Open Questions**
+* Should the title also contain a description of the feed (eg "MP3", "HQ",
+  etc)? If not, where should such information go?
 
 
 ### Link
