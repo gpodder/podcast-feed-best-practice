@@ -92,16 +92,34 @@ different number and or selection of episodes, etc). See section
 
 ### Title
 
-The name of the podcast. A feed MUST contain a title.
+The name of the podcast. A feed MUST contain a title, and it must not be
+empty. It MAY contain additional classification of the feed (such as "MP3" or
+"HQ", etc..) if there are multiple feeds, but if such additional classification
+is added, it SHOULD be added to the end of the title. It SHOULD NOT contain
+special characters at the end / at the beginning. Avoid terms like "podcast",
+"feed", "episodes", etc.. in the title - it will be obvious (or irrelevant) to
+your users (exception: if "Podcast" is part of your show's name, it is okay to
+have it included in the title).
 
 Paths:
 * Atom: `/atom10:feed/atom10:title`
 * RSS: `/rss/channel/title`
 * RSS (DC): `/rss/channel/dc:title`
 
-**Open Questions**
-* Should the title also contain a description of the feed (eg "MP3", "HQ",
-  etc)? If not, where should such information go?
+Good:
+* All My Ponies
+* Opinion of Johnny
+* FLOSS Daily - HQ
+* Beyond the Usual (MP3)
+
+Bad:
+* All Podcast Episodes
+* MP3 Feed
+* Podcast - High Quality
+* All Entries
+* HQ MP3 - FLOSS
+* > Awesome Podcast <
+* [The Super Podcast]
 
 
 ### GUID
@@ -111,6 +129,7 @@ A podcast feed SHOULD provide a globally unique Id (GUID).
 TODOs
 * RSS?
 * Should the GUID represent the feed or the podcast?
+* Right now, we don't used the (feed-wide) GUID at all in gPodder
 
 Paths
 * Atom `/atom10:feed/atom10:id`
