@@ -48,7 +48,7 @@ files_.
 
 ### Structure
 
-The remaineder of this document is divided into the following sections:
+The remainder of this document is divided into the following sections:
 
 * **General Considerations** discusses general topics related to the
   distribution of podcasts
