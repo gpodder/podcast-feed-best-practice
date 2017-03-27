@@ -9,7 +9,7 @@ publishers and systems creating podcast feeds on behalf of them, as well as for
 podcast clients need to interpret those feeds.
 
 This document is published by the [gPodder team] [gpodder] but aims for general
-compatability among podcast applications.
+compatibility among podcast applications.
 
 
 Preface
@@ -118,7 +118,7 @@ Bad:
 * Podcast - High Quality
 * All Entries
 * HQ MP3 - FLOSS
-* > Awesome Podcast <
+* \> Awesome Podcast <
 * [The Super Podcast]
 
 
@@ -131,7 +131,7 @@ TODOs
 * Should the GUID represent the feed or the podcast?
 * Right now, we don't used the (feed-wide) GUID at all in gPodder
 
-Paths
+Paths:
 * Atom `/atom10:feed/atom10:id`
 
 
@@ -141,7 +141,7 @@ The URL of the podcast's website. The resource that is available through the
 specified URL should be accessible by a browser.
 
 Paths:
-* Atom: `/atom10:feed/atom10:link[@rel=”alternate”]/@href`
+* Atom: `/atom10:feed/atom10:link[@rel="alternate"]/@href`
 * Atom: `/atom10:feed/atom10:link[not(@rel)]/@href`
 * RSS: `rss/channel/link`
 
@@ -153,11 +153,11 @@ using [Markdown][markdown].  It is RECOMMENDED to provide a short and long
 version of the description. If there is only one description for the feed, the
 short description SHOULD NOT be used.
 
-Paths (Short Descriptions)
+Paths (Short Descriptions):
 * Atom: `/atom10:feed/atom10:subtitle`
 * RSS (iTunes): `/rss/channel/itunes:subtitle` (see [itunes:subtitle](http://www.apple.com/itunes/podcasts/specs.html#subtitle))
 
-Paths (Long Description)
+Paths (Long Description):
 * RSS: `rss/channel/description`
 * RSS (DC): `/rss/channel/dc:description`
 * RSS (iTunes): (see [itunes:summary](http://www.apple.com/itunes/podcasts/specs.html#summary))
@@ -185,7 +185,7 @@ element from the iTunes extensions.
 It is RECOMMENDED to provide an image or cover art for a podcast. The URL of
 the image MUST be provided. All other information is OPTIONAL.
 
-Paths
+Paths:
 * Atom: `/atom10:feed/atom10:logo`
 * RSS: `/rss/channel/image` (see [image](http://cyber.law.harvard.edu/rss/rss.html#ltimagegtSubelementOfLtchannelgt))
 * RSS (iTunes): (see [itunes:image](http://www.apple.com/itunes/podcasts/specs.html#image))
@@ -204,8 +204,8 @@ published. If an RSS feed is available under a Creative Commons license, the
 [creative commons namespace](http://www.rssboard.org/creative-commons) SHOULD
 be used.
 
-Paths
-* Atom: `/atom10:feed/atom10:link[@rel=”license”]/@href`
+Paths:
+* Atom: `/atom10:feed/atom10:link[@rel="license"]/@href`
 * RSS (CC): `/rss/channel/creativeCommons:license`
 
 
@@ -218,7 +218,7 @@ the podcast. The language should be specified according to [RFC
 4647](http://tools.ietf.org/html/rfc4647) and [RFC
 5646](http://tools.ietf.org/html/rfc5646).
 
-Paths
+Paths:
 * Atom: `feed/@xml:lang`
 * RSS (DC): `/rss/channel/dc:language`
 * RSS: `/rss/channel/language`
@@ -232,7 +232,7 @@ listeners can support the creation of the podcast.
 Services
 * [Flattr](http://developers.flattr.net/feed/)
 
-Paths
+Paths:
 * Atom: `/atom10:feed/atom10:entry/atom10:link[@rel="payment"]`
 
 
@@ -252,7 +252,7 @@ following notations SHOULD be used.
 * My Application (+http://example.com/)
 * My Application/2.5 (+http://example.com/)
 
-Paths
+Paths:
 * Atom: `/atom10:feed/atom10:generator`
 * RSS: `/rss/channel/generator`
 
@@ -269,7 +269,7 @@ the author.
 Author Paths:
 * Atom: `/atom10:feed/atom10:author` (see [author][rfc4287author] and [person][rfc4287person])
 * RSS (DC): `/rss/channel/dc:creator` (see [dc][dc])
-* RSS (iTunes): `/rss/channel/itunes:author` (see [author](http://www.apple.com/itunes/podcasts/specs.html#authorId)
+* RSS (iTunes): `/rss/channel/itunes:author` (see [author](http://www.apple.com/itunes/podcasts/specs.html#authorId))
 
 Contributor Paths:
 * Atom `/atom10:feed/atom10:contributor`
@@ -308,7 +308,7 @@ A podcast MUST be published in either [RSS 2.0][rss20] or [Atom 1.0][rfc4287].
 A podcast feed SHOULD specify the date it was published. The publication date
 MUST conform to the [RFC 2822 Date and Time Specification][rfc2822datetime].
 
-Paths
+Paths:
 * RSS: `/rss/channel/pubDate`
 
 
@@ -318,7 +318,7 @@ A podcast feed SHOULD specify the date if was last updated. The update
 date MUST conform to the [RFC 2822 Date and Time
 Specification][rfc2822datetime].
 
-Paths
+Paths:
 * Atom: `/atom10:feed/atom10:updated`
 * RSS (DC): `/rss/channel/dc:date`
 
@@ -329,7 +329,7 @@ Paths
 
 A podcast feed SHOULD specify its publisher.
 
-Paths
+Paths:
 * RSS (DC): `/rss/channel/dc:publisher`
 * RSS (iTunes): `/rss/channel/itunes:owner`
 
@@ -352,9 +352,9 @@ target directly in the future.
 A podcast feed SHOULD be published through a [PubSubHubbub
 hub](http://code.google.com/p/pubsubhubbub/).
 
-Paths
-* Atom: /atom10:feed/atom10:link[@rel=”alternate”]/@href
-* RSS: /rss/channel/atom10:link[@rel=”alternate”]/@href (see [info](http://code.google.com/p/pubsubhubbub/wiki/RssFeeds))
+Paths:
+* Atom: `/:atom10:feed/atom10:link[@rel="alternate"]/@href`
+* RSS: `/rss/channel/atom10:link[@rel="alternate"]/@href` (see [info](http://code.google.com/p/pubsubhubbub/wiki/RssFeeds))
 
 
 Episode
@@ -399,7 +399,7 @@ Author Paths:
 Contributor Paths:
 * Atom: `/atom10:feed/atom10:entry/atom10:contributor`
 * RSS (DC): `/rss/channel/item/dc:contributor`
-* RSS (iTunes): `/rss/channel/item/itunes:author` (see [author](http://www.apple.com/itunes/podcasts/specs.html#authorId)
+* RSS (iTunes): `/rss/channel/item/itunes:author` (see [author](http://www.apple.com/itunes/podcasts/specs.html#authorId))
 
 
 * TODO: should the author be included in the contributors?
@@ -409,7 +409,7 @@ Contributor Paths:
 
 An episode SHOULD specify its publisher.
 
-Paths
+Paths:
 * RSS (DC): `/rss/item/dc:publisher`
 * RSS (iTunes): `/rss/item/itunes:owner`
 
@@ -418,7 +418,7 @@ Paths
 
 Sources and Show notes
 
-Paths
+Paths:
 * Atom: `/atom10:feed/atom10:entry/atom10:source`
 
 
@@ -430,14 +430,16 @@ different feeds) that describe the same episode (possibly in different
 formats) MUST have the same GUID. Two episode entries that describe
 different episodes MUST NOT have the same GUID.
 
-Paths
+Paths:
 * Atom: `/atom10:feed/atom10:entry/atom10:id`
 * RSS: `/rss/channel/item/guid`
 
 
 ### Title
 
-Paths
+The Title of this episode.
+
+Paths:
 * Atom: `/atom10:feed/atom10:entry/atom10:title`
 * RSS (DC): `/rss/channel/item/dc:title`
 * RSS: `/rss/channel/item/title`
@@ -449,9 +451,9 @@ The URL of the episode's website. The resource that is available through the
 specified URL should be accessible by a browser.
 
 Paths:
-* Atom: /atom10:feed/atom10:entry/atom10:link[@rel=”alternate”]/@href
-* Atom: /atom10:feed/atom10:entry/atom10:link[not(@rel)]/@href
-* RSS: /rss/channel/item/link
+* Atom: `/atom10:feed/atom10:entry/atom10:link[@rel="alternate"]/@href`
+* Atom: `/atom10:feed/atom10:entry/atom10:link[not(@rel)]/@href`
+* RSS: `/rss/channel/item/link`
 
 
 ### Description
@@ -461,12 +463,12 @@ using [Markdown][markdown]. It is RECOMMENDED to provide a short and long
 version of the description. If there is only one description for the feed, the
 short description SHOULD NOT be used.
 
-Paths (Short Description)
+Paths (Short Description):
 * Atom: `/atom10:feed/atom10:entry/atom10:summary`
 * RSS: `/rss/channel/item/description`
 * RSS: `/rss/channel/item/dc:description`
 
-Paths (Long Description)
+Paths (Long Description):
 * Atom: `/atom10:feed/atom10:entry/atom10:content`
 * RSS: `/rss/channel/item/body`
 * RSS: `/rss/channel/item/content:encoded`
@@ -483,7 +485,7 @@ published. If an episode in a RSS feed is available under a Creative Commons
 license, the [creative commons
 namespace](http://www.rssboard.org/creative-commons) SHOULD be used.
 
-Paths
+Paths:
 * Atom: `/atom10:feed/atom10:entry/atom10:link[@rel=”license”]/@href`
 * RSS (CC): `/rss/channel/item/creativeCommons:license`
 
@@ -494,7 +496,7 @@ An episode feed SHOULD specify the date if was last updated. The update
 date MUST conform to the [RFC 2822 Date and Time
 Specification][rfc2822datetime].
 
-Paths
+Paths:
 * Atom: `/atom10:feed/atom10:entry/atom10:updated`
 * RSS (DC): `/rss/channel/item/dcterms:modified`
 
@@ -509,7 +511,7 @@ TODO
 The publication date MUST conform to the [RFC 2822 Date and Time
 Specification][rfc2822datetime].
 
-Paths
+Paths:
 * Atom: `/atom10:feed/atom10:entry/atom10:published`
 * RSS: `/rss/channel/item/pubDate`
 * RSS (DC): `/rss/channel/item/dcterms:issues` (see [issued](http://dublincore.org/documents/dcmi-terms/#terms-issued))
@@ -523,7 +525,7 @@ listeners can support the creation of the podcast.
 Services
 * [Flattr](http://developers.flattr.net/feed/)
 
-Paths
+Paths:
 * Atom: `/atom10:feed/atom10:entry/atom10:link[@rel="payment"]`
 
 
@@ -534,7 +536,7 @@ Paths
 
 ### Tags and Categorization
 
-Paths
+Paths:
 * Atom: `/atom10:feed/atom10:entry/category`
 * RSS: `/rss/channel/item/category`
 * RSS (DC): `/rss/channel/item/dc:subject`
@@ -561,7 +563,7 @@ For iTunes support refer to the [audio and video formats recommended by
 Apple](http://www.apple.com/itunes/podcasts/specs.html#formattingvideo).
 
 
-Paths
+Paths:
 * Atom: `/atom10:feed/atom10:entry/atom10:link[@rel="enclosure"]`
 * RSS: `/rss/channel/item/enclosure`
 
@@ -578,7 +580,7 @@ References
 [rss20]: http://cyber.law.harvard.edu/rss/rss.html "RSS 2.0 at Harvard Law"
 [rfc4287]: http://tools.ietf.org/html/rfc4287 "The Atom Syndication Format"
 [rfc4287author]: (http://tools.ietf.org/html/rfc4287#section-4.2.1 (The "atom:author" Element)
-[frc4287person]: (http://tools.ietf.org/html/rfc4287#section-3.2 "Person Constructurs"
+[rfc4287person]: (http://tools.ietf.org/html/rfc4287#section-3.2 "Person Constructurs"
 [itunes]: http://www.apple.com/itunes/podcasts/specs.html#subtitle "iTunes Extensions"
 [synmod]: http://web.resource.org/rss/1.0/modules/syndication/ "RDF Site Summary 1.0 Modules: Syndication"
 [dc]: http://tools.ietf.org/html/rfc5013 "The Dublin Core Metadata Element Set"
